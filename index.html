@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wei Cai — Independent Consultant in Italy</title>
+  <meta name="description" content="Independent consultant in Italy: real estate, consulting & translations, tour guiding, property management. 多语言：中文 / English / Français / Italiano" />
+  <style>
+    :root{
+      --bg:#0b1020;--card:#121831;--soft:#1a2246;--text:#e9eef9;--muted:#b3c0e6;--accent:#5dd3ff;--accent-2:#7cffb2;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#0f1833);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    a{color:var(--accent)}
+    header{position:sticky;top:0;background:rgba(11,16,32,.75);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid #202848;z-index:10}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px 20px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .brand .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 6px 16px rgba(93,211,255,.35)}
+    .brand .title{font-weight:700;letter-spacing:.4px}
+    .lang{margin-left:auto;display:flex;gap:8px}
+    .lang button{background:var(--soft);border:1px solid #2a3569;color:var(--text);padding:8px 10px;border-radius:10px;cursor:pointer}
+    .lang button.active{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#051026;border-color:transparent;font-weight:700}
+
+    .hero{padding:72px 20px 40px}
+    .hero-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:26px}
+    .card{background:var(--card);border:1px solid #222a50;border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(5,10,30,.35)}
+    h1{margin:0 0 10px;font-size:34px}
+    h2{margin:0 0 10px;font-size:24px}
+    p.lead{color:var(--muted);font-size:18px}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid #2a3569;background:var(--soft);font-size:12px;color:var(--muted)}
+    .list{margin:14px 0 0;padding:0;list-style:none}
+    .list li{padding:10px 12px;border:1px solid #222a50;background:#0f1530;border-radius:12px;margin:10px 0;display:flex;gap:10px;align-items:center}
+
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .contact a.btn{display:inline-block;text-decoration:none;padding:10px 14px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#0a1024;border-radius:12px;font-weight:700;border:0}
+
+    footer{margin:40px 0;padding:20px 0;border-top:1px dashed #2b356c;color:var(--muted)}
+
+    @media (max-width:920px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid,.contact{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="display:flex;align-items:center;gap:18px">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="title">Wei Cai — Independent Consultant</div>
+      </div>
+      <nav class="lang" aria-label="Language switcher">
+        <button data-lang="zh" class="active">中文</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="fr">FR</button>
+        <button data-lang="it">IT</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-grid">
+      <section class="card">
+        <h1 id="t-hero-title">意大利独立顾问</h1>
+        <p class="lead" id="t-hero-sub">专注房产置业、咨询与翻译、导游陪同、资产管理。支持中文 / English / Français / Italiano。</p>
+        <div class="badge" id="t-badge-base">服务范围：皮埃蒙特大区 · 亚历山德里亚省 · 以及意大利其他地区（按需）</div>
+        <ul class="list" id="t-services">
+          <!-- filled by JS -->
+        </ul>
+      </section>
+
+      <aside class="card">
+        <h2 id="t-contact-title">联系我</h2>
+        <div class="contact">
+          <div>
+            <p><strong id="t-name">蔡唯（Wei Cai）</strong><br/>
+              <span id="t-role">独立顾问 / 自由职业者</span>
+            </p>
+            <p>
+              <span id="t-address-label">地址</span>：Spigno Monferrato (AL), Piemonte, Italia<br/>
+              <span>WhatsApp</span>：<a href="https://wa.me/393779924861" rel="noopener" target="_blank">+39 377 992 4861</a><br/>
+              Email（PEC）：<a href="mailto:weicai@pec.it">weicai@pec.it</a>
+            </p>
+            <p>P.IVA: <strong>04164140131</strong></p>
+          </div>
+          <div>
+            <p id="t-cta-text">说明需求或预约咨询，点击下方按钮：</p>
+            <p>
+              <a class="btn" href="https://wa.me/393779924861?text=Ciao%20Wei!" target="_blank" rel="noopener" id="t-cta-btn">通过 WhatsApp 联系</a>
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="wrap" style="margin-top:26px">
+      <div class="grid">
+        <div class="card">
+          <h2 id="t-about-title">关于我</h2>
+          <p id="t-about-body">在意大利长期生活与工作，熟悉当地政策、交易流程与多语沟通。为个人与企业提供端到端落地服务：从房源甄选、尽调谈判，到合同、翻译与落地管理。</p>
+        </div>
+        <div class="card">
+          <h2 id="t-extras-title">增值与合规</h2>
+          <p id="t-extras-body">提供合规咨询（含税务发票与合同支持），注重风险控制与隐私保护。可与客户现有团队（律师、会计、工匠等）协同作业，确保项目如期交付。</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="wrap">
+      <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between">
+        <div>© <span id="year"></span> Wei Cai. <span id="t-rights">保留所有权利。</span></div>
+        <div>P.IVA: <strong>04164140131</strong> · <a href="mailto:weicai@pec.it">weicai@pec.it</a></div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const langPacks = {
+      zh:{
+        heroTitle:"意大利独立顾问",
+        heroSub:"专注房产置业、咨询与翻译、导游陪同、资产管理。支持中文 / English / Français / Italiano。",
+        badgeBase:"服务范围：皮埃蒙特大区 · 亚历山德里亚省 · 以及意大利其他地区（按需）",
+        services:[
+          "🏠 房地产：买卖/租赁/尽调/交割协调",
+          "📝 咨询与翻译：合同、文件、政务沟通",
+          "🗺️ 导游与接待：行程规划、随行口译",
+          "🔑 物业与资产管理：托管、维护与增值"
+        ],
+        contactTitle:"联系我",
+        name:"蔡唯（Wei Cai）",
+        role:"独立顾问 / 自由职业者",
+        addressLabel:"地址",
+        ctaText:"说明需求或预约咨询，点击下方按钮：",
+        ctaBtn:"通过 WhatsApp 联系",
+        aboutTitle:"关于我",
+        aboutBody:"在意大利长期生活与工作，熟悉当地政策、交易流程与多语沟通。为个人与企业提供端到端落地服务：从房源甄选、尽调谈判，到合同、翻译与落地管理。",
+        extrasTitle:"增值与合规",
+        extrasBody:"提供合规咨询（含税务发票与合同支持），注重风险控制与隐私保护。可与客户现有团队（律师、会计、工匠等）协同作业，确保项目如期交付。",
+        rights:"保留所有权利。"
+      },
+      en:{
+        heroTitle:"Independent Consultant in Italy",
+        heroSub:"Real estate, consulting & translations, tour guiding, property management. Languages: Chinese / English / French / Italian.",
+        badgeBase:"Areas: Piedmont · Alessandria · Projects across Italy upon request",
+        services:[
+          "🏠 Real estate: buy/sell/rent, due diligence & closing",
+          "📝 Consulting & translations: contracts, documents, authorities",
+          "🗺️ Tour guiding & hosting: itineraries, on‑site interpreting",
+          "🔑 Property & asset management: caretaking, maintenance, value‑add"
+        ],
+        contactTitle:"Contact",
+        name:"Wei Cai",
+        role:"Independent consultant / freelancer",
+        addressLabel:"Address",
+        ctaText:"Tell me what you need or book a consultation:",
+        ctaBtn:"Message me on WhatsApp",
+        aboutTitle:"About",
+        aboutBody:"Based in Italy with hands‑on experience in policy, transactions and multilingual coordination. End‑to‑end support from sourcing and due diligence to contracts, translation and on‑going management.",
+        extrasTitle:"Value & Compliance",
+        extrasBody:"Invoices and compliant paperwork provided. Strong focus on risk control and privacy. Happy to collaborate with your lawyers, accountants and contractors.",
+        rights:"All rights reserved."
+      },
+      fr:{
+        heroTitle:"Consultant indépendant en Italie",
+        heroSub:"Immobilier, conseil & traductions, accompagnement touristique, gestion patrimoniale. Langues : chinois / anglais / français / italien.",
+        badgeBase:"Zones : Piémont · Alessandria · Interventions dans toute l’Italie sur demande",
+        services:[
+          "🏠 Immobilier : achat/vente/location, due diligence et closing",
+          "📝 Conseil & traductions : contrats, dossiers, autorités",
+          "🗺️ Accompagnement & guidage : itinéraires, interprétariat sur site",
+          "🔑 Gestion immobilière & patrimoniale : intendance, maintenance, valorisation"
+        ],
+        contactTitle:"Contact",
+        name:"Wei Cai",
+        role:"Consultant indépendant / freelance",
+        addressLabel:"Adresse",
+        ctaText:"Présentez votre besoin ou demandez un rendez‑vous :",
+        ctaBtn:"Me contacter sur WhatsApp",
+        aboutTitle:"À propos",
+        aboutBody:"Implanté en Italie, habitué des procédures, des transactions et de la coordination multilingue. Accompagnement de bout en bout : sourcing, vérifications, contrats, traductions et gestion continue.",
+        extrasTitle:"Valeur & Conformité",
+        extrasBody:"Facturation et documents conformes. Priorité au contrôle des risques et à la confidentialité. Travail en collaboration avec vos conseils et artisans.",
+        rights:"Tous droits réservés."
+      },
+      it:{
+        heroTitle:"Consulente indipendente in Italia",
+        heroSub:"Immobiliare, consulenza e traduzioni, accompagnamento turistico, gestione patrimoniale. Lingue: cinese / inglese / francese / italiano.",
+        badgeBase:"Zone: Piemonte · Alessandria · Progetti in tutta Italia su richiesta",
+        services:[
+          "🏠 Immobiliare: acquisto/vendita/locazione, due diligence e rogito",
+          "📝 Consulenza e traduzioni: contratti, pratiche, rapporti con enti",
+          "🗺️ Guida e accoglienza: itinerari, interpretariato in loco",
+          "🔑 Gestione immobiliare e patrimoniale: custodia, manutenzione, valorizzazione"
+        ],
+        contactTitle:"Contatti",
+        name:"Wei Cai",
+        role:"Consulente indipendente / libero professionista",
+        addressLabel:"Indirizzo",
+        ctaText:"Descrivi l’esigenza o prenota una consulenza:",
+        ctaBtn:"Scrivimi su WhatsApp",
+        aboutTitle:"Chi sono",
+        aboutBody:"Radicato in Italia, conosco procedure, transazioni e coordinamento multilingue. Supporto end‑to‑end: ricerca immobili, verifiche, contratti, traduzioni e gestione continuativa.",
+        extrasTitle:"Valore & Compliance",
+        extrasBody:"Fatture e documentazione a norma. Focus su controllo dei rischi e privacy. Collaboro volentieri con i tuoi avvocati, commercialisti e artigiani.",
+        rights:"Tutti i diritti riservati."
+      }
+    };
+
+    function setLang(code){
+      const t = langPacks[code];
+      document.documentElement.lang = code === 'zh' ? 'zh-Hans' : code;
+      // Hero
+      document.getElementById('t-hero-title').textContent = t.heroTitle;
+      document.getElementById('t-hero-sub').textContent = t.heroSub;
+      document.getElementById('t-badge-base').textContent = t.badgeBase;
+      // Services
+      const ul = document.getElementById('t-services');
+      ul.innerHTML = '';
+      t.services.forEach(s=>{const li=document.createElement('li');li.textContent=s;ul.appendChild(li)});
+      // Contact block
+      document.getElementById('t-contact-title').textContent = t.contactTitle;
+      document.getElementById('t-name').textContent = t.name;
+      document.getElementById('t-role').textContent = t.role;
+      document.getElementById('t-address-label').textContent = t.addressLabel;
+      document.getElementById('t-cta-text').textContent = t.ctaText;
+      document.getElementById('t-cta-btn').textContent = t.ctaBtn;
+      // About
+      document.getElementById('t-about-title').textContent = t.aboutTitle;
+      document.getElementById('t-about-body').textContent = t.aboutBody;
+      document.getElementById('t-extras-title').textContent = t.extrasTitle;
+      document.getElementById('t-extras-body').textContent = t.extrasBody;
+      document.getElementById('t-rights').textContent = t.rights;
+      document.querySelectorAll('.lang button').forEach(b=>b.classList.toggle('active',b.dataset.lang===code));
+      localStorage.setItem('lang',code);
+    }
+
+    document.querySelectorAll('.lang button').forEach(btn=>btn.addEventListener('click',()=>setLang(btn.dataset.lang)));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    setLang(localStorage.getItem('lang')||'zh');
+  </script>
+</body>
+</html>
