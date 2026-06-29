@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" role="img" aria-label="CW Consulting">
-  <title>CW Consulting</title>
-  <path d="M178 56a82 82 0 1 0 0 90" fill="none" stroke="#0D1B2A" stroke-width="25" stroke-linecap="round"/>
-  <path d="M160 111l48 48 64-72 79 78 118-130" fill="none" stroke="#2BA676" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="73" y="205" font-family="Inter, Helvetica, Arial, sans-serif" font-size="32" letter-spacing="18" fill="#0D1B2A">CONSULTING</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 230" role="img" aria-label="CW Consulting">
+<title>CW Consulting</title>
+<path d="M190 55a86 86 0 1 0 0 96" fill="none" stroke="#0D1B2A" stroke-width="26" stroke-linecap="round"/>
+<path d="M164 116l51 50 68-76 82 82 126-138" fill="none" stroke="#2BA676" stroke-width="25" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="76" y="212" font-family="Inter,Helvetica,Arial,sans-serif" font-size="33" letter-spacing="19" fill="#0D1B2A">CONSULTING</text>
 </svg>
