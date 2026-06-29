@@ -1,5 +1,10 @@
 {
-  "project": "CW Consulting GitHub Pages Website V3.0",
+  "project": "CW Consulting Enterprise Website V5.0",
+  "brand": {
+    "name": "CW Consulting",
+    "slogan": "Verified Twice. Trusted Always.",
+    "philosophy": "Compliance that Continues. Verification that Builds Trust."
+  },
   "links": {
     "calendar": "https://calendar.app.google/WShjV9JYUkci1fMTA",
     "whatsapp": "https://wa.me/41798888811?text=Hello%20Wei%2C%0A%0AI%20would%20like%20to%20discuss%20our%20Payroll%2C%20HR%20or%20Compliance%20requirements.",
@@ -13,5 +18,9 @@
     "ink": "#101828",
     "muted": "#667085",
     "line": "#D0D5DD"
+  },
+  "typography": {
+    "primary": "Inter",
+    "cjk": "Noto Sans SC"
   }
 }

@@ -1,6 +1,19 @@
-# CW Consulting GitHub Pages Website V3.0
+# CW Consulting Enterprise Website V5.0
 
-Upload all files in this folder to `cwmaster818/cwmaster818.github.io`.
+GitHub Pages static website package.
 
-Google Calendar booking link integrated:
+## Deploy
+Upload all files to:
+`cwmaster818/cwmaster818.github.io`
+
+## Included
+- index.html
+- styles.css
+- script.js
+- robots.txt
+- sitemap.xml
+- manifest.json
+- assets/
+
+## Google Calendar Booking
 https://calendar.app.google/WShjV9JYUkci1fMTA
